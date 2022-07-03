@@ -6,9 +6,8 @@
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
-
 class QMediaPlayer;
-
+class QAudioOutput;
 class Widget : public QWidget
 {
     Q_OBJECT
@@ -24,9 +23,9 @@ private slots:
     void on_stop_clicked();
     void on_mute_clicked();
     void on_volume_valueChanged(int value);
-
 private:
     Ui::Widget *ui;
-    QMediaPlayer *mMediaPlayer;
+    QMediaPlayer *player;
+    QAudioOutput *audioOutput;
 };
 #endif // WIDGET_H

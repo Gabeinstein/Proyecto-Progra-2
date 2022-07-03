@@ -9,7 +9,7 @@
         "-I",
         "P:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-UGSuNX\\clang-uiheader-yXxPVT",
+        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-SmXmwj\\clang-uiheader-EKZGrs",
         "-nostdinc",
         "-nostdinc++",
         "-std=gnu++11",
@@ -36,7 +36,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ",
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include",
         "-I",
@@ -50,9 +50,9 @@
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -76,10 +76,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ\\main.cpp"
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ\\main.cpp"
     ],
-    "directory": "D:/Github/Proyecto-Progra-2/build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/Github/Proyecto-Progra-2/spotifyUSFQ/main.cpp"
+    "directory": "D:/Github/Proyecto-Progra-2/build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Github/Proyecto-Progra-2/SpotifyUSFQ/main.cpp"
 },
 {
     "arguments": [
@@ -91,7 +91,7 @@
         "-I",
         "P:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-UGSuNX\\clang-uiheader-yXxPVT",
+        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-SmXmwj\\clang-uiheader-EKZGrs",
         "-nostdinc",
         "-nostdinc++",
         "-std=gnu++11",
@@ -118,7 +118,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ",
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include",
         "-I",
@@ -132,9 +132,9 @@
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -158,10 +158,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ\\widget.cpp"
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ\\widget.cpp"
     ],
-    "directory": "D:/Github/Proyecto-Progra-2/build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/Github/Proyecto-Progra-2/spotifyUSFQ/widget.cpp"
+    "directory": "D:/Github/Proyecto-Progra-2/build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Github/Proyecto-Progra-2/SpotifyUSFQ/widget.cpp"
 },
 {
     "arguments": [
@@ -173,7 +173,7 @@
         "-I",
         "P:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-UGSuNX\\clang-uiheader-yXxPVT",
+        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-SmXmwj\\clang-uiheader-EKZGrs",
         "-nostdinc",
         "-nostdinc++",
         "-std=gnu++11",
@@ -200,7 +200,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ",
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include",
         "-I",
@@ -214,9 +214,9 @@
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -240,10 +240,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ\\widget.h"
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ\\widget.h"
     ],
-    "directory": "D:/Github/Proyecto-Progra-2/build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/Github/Proyecto-Progra-2/spotifyUSFQ/widget.h"
+    "directory": "D:/Github/Proyecto-Progra-2/build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Github/Proyecto-Progra-2/SpotifyUSFQ/widget.h"
 },
 {
     "arguments": [
@@ -255,7 +255,7 @@
         "-I",
         "P:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-UGSuNX\\clang-uiheader-yXxPVT",
+        "C:\\Users\\gsoch\\AppData\\Local\\Temp\\QtCreator-SmXmwj\\clang-uiheader-EKZGrs",
         "-nostdinc",
         "-nostdinc++",
         "-std=gnu++11",
@@ -282,7 +282,7 @@
         "-DQT_CORE_LIB",
         "-DQT_NEEDS_QMAIN",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\spotifyUSFQ",
+        "D:\\Github\\Proyecto-Progra-2\\SpotifyUSFQ",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include",
         "-I",
@@ -296,9 +296,9 @@
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\include\\QtCore",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\debug",
         "-I",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug",
         "-I",
         "P:\\Qt\\6.3.1\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -322,9 +322,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "D:\\Github\\Proyecto-Progra-2\\build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\ui_widget.h"
+        "D:\\Github\\Proyecto-Progra-2\\build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug\\ui_widget.h"
     ],
-    "directory": "D:/Github/Proyecto-Progra-2/build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "D:/Github/Proyecto-Progra-2/build-spotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/ui_widget.h"
+    "directory": "D:/Github/Proyecto-Progra-2/build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Github/Proyecto-Progra-2/build-SpotifyUSFQ-Desktop_Qt_6_3_1_MinGW_64_bit-Debug/ui_widget.h"
 }
 ]

@@ -23,40 +23,40 @@ class Ui_Widget
 public:
     QPushButton *abrir;
     QPushButton *play;
-    QPushButton *pause;
     QPushButton *stop;
     QPushButton *mute;
+    QPushButton *pause;
     QSlider *volume;
-    QProgressBar *progressBar;
+    QProgressBar *avance;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(800, 600);
+        Widget->resize(651, 216);
         abrir = new QPushButton(Widget);
         abrir->setObjectName(QString::fromUtf8("abrir"));
-        abrir->setGeometry(QRect(60, 40, 83, 29));
+        abrir->setGeometry(QRect(30, 30, 83, 29));
         play = new QPushButton(Widget);
         play->setObjectName(QString::fromUtf8("play"));
-        play->setGeometry(QRect(190, 40, 83, 29));
-        pause = new QPushButton(Widget);
-        pause->setObjectName(QString::fromUtf8("pause"));
-        pause->setGeometry(QRect(320, 40, 83, 29));
+        play->setGeometry(QRect(310, 30, 83, 29));
         stop = new QPushButton(Widget);
         stop->setObjectName(QString::fromUtf8("stop"));
-        stop->setGeometry(QRect(450, 40, 83, 29));
+        stop->setGeometry(QRect(530, 30, 83, 29));
         mute = new QPushButton(Widget);
         mute->setObjectName(QString::fromUtf8("mute"));
-        mute->setGeometry(QRect(60, 170, 83, 29));
+        mute->setGeometry(QRect(30, 150, 83, 29));
+        pause = new QPushButton(Widget);
+        pause->setObjectName(QString::fromUtf8("pause"));
+        pause->setGeometry(QRect(420, 30, 83, 29));
         volume = new QSlider(Widget);
         volume->setObjectName(QString::fromUtf8("volume"));
-        volume->setGeometry(QRect(230, 170, 160, 18));
+        volume->setGeometry(QRect(150, 150, 160, 18));
         volume->setOrientation(Qt::Horizontal);
-        progressBar = new QProgressBar(Widget);
-        progressBar->setObjectName(QString::fromUtf8("progressBar"));
-        progressBar->setGeometry(QRect(60, 110, 471, 23));
-        progressBar->setValue(0);
+        avance = new QProgressBar(Widget);
+        avance->setObjectName(QString::fromUtf8("avance"));
+        avance->setGeometry(QRect(30, 90, 581, 23));
+        avance->setValue(0);
 
         retranslateUi(Widget);
 
@@ -65,12 +65,12 @@ public:
 
     void retranslateUi(QWidget *Widget)
     {
-        Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        Widget->setWindowTitle(QCoreApplication::translate("Widget", "SpotifyUSFQ", nullptr));
         abrir->setText(QCoreApplication::translate("Widget", "Abrir", nullptr));
         play->setText(QCoreApplication::translate("Widget", "Play", nullptr));
-        pause->setText(QCoreApplication::translate("Widget", "Pause", nullptr));
         stop->setText(QCoreApplication::translate("Widget", "Stop", nullptr));
         mute->setText(QCoreApplication::translate("Widget", "Mute", nullptr));
+        pause->setText(QCoreApplication::translate("Widget", "Pause", nullptr));
     } // retranslateUi
 
 };
