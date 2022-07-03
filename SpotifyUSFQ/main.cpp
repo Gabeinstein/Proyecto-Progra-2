@@ -1,9 +1,12 @@
-#include <iostream>
+#include "widget.h"
 
-using namespace std;
+#include <QApplication>
 
-int main()
+int main(int argc, char *argv[])
 {
-    cout << "Este es el futuro Spotify de la USFQ!" << endl;
-    return 0;
+    QApplication a(argc, argv);
+    a.setStyle("fusion");
+    Widget w;
+    w.show();
+    return a.exec();
 }
