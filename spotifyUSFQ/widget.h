@@ -3,11 +3,13 @@
 
 #include <QWidget>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
 class QMediaPlayer;
 class QAudioOutput;
+class Database;
 class Widget : public QWidget
 {
     Q_OBJECT
@@ -23,9 +25,14 @@ private slots:
     void on_stop_clicked();
     void on_mute_clicked();
     void on_volume_valueChanged(int value);
+    void on_connect_clicked();
+
+    void on_request_clicked();
+
 private:
     Ui::Widget *ui;
     QMediaPlayer *player;
     QAudioOutput *audioOutput;
+    Database *music_db;
 };
 #endif // WIDGET_H

@@ -313,6 +313,7 @@ Makefile: ../SpotifyUSFQ/SpotifyUSFQ.pro P:/Qt/6.3.1/mingw_64/mkspecs/win32-g++/
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/resolve_config.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/exclusive_builds_post.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/default_post.prf \
+		P:/Qt/6.3.1/mingw_64/mkspecs/features/win32/console.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/qml_debug.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/entrypoint.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/precompile_header.prf \
@@ -325,7 +326,6 @@ Makefile: ../SpotifyUSFQ/SpotifyUSFQ.pro P:/Qt/6.3.1/mingw_64/mkspecs/win32-g++/
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/uic.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/qmake_use.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/file_copies.prf \
-		P:/Qt/6.3.1/mingw_64/mkspecs/features/win32/windows.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/testcase_targets.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/exceptions.prf \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/yacc.prf \
@@ -335,8 +335,8 @@ Makefile: ../SpotifyUSFQ/SpotifyUSFQ.pro P:/Qt/6.3.1/mingw_64/mkspecs/win32-g++/
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Widgets.prl \
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Gui.prl \
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Network.prl \
+		P:/Qt/6.3.1/mingw_64/lib/Qt6Sql.prl \
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Core.prl \
-		P:/Qt/6.3.1/mingw_64/lib/Qt6EntryPoint.prl \
 		P:/Qt/6.3.1/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ../SpotifyUSFQ/SpotifyUSFQ.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 P:/Qt/6.3.1/mingw_64/mkspecs/features/spec_pre.prf:
@@ -582,6 +582,7 @@ P:/Qt/6.3.1/mingw_64/mkspecs/features/win32/default_pre.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/resolve_config.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/exclusive_builds_post.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/default_post.prf:
+P:/Qt/6.3.1/mingw_64/mkspecs/features/win32/console.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/qml_debug.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/entrypoint.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/precompile_header.prf:
@@ -594,7 +595,6 @@ P:/Qt/6.3.1/mingw_64/mkspecs/features/win32/opengl.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/uic.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/qmake_use.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/file_copies.prf:
-P:/Qt/6.3.1/mingw_64/mkspecs/features/win32/windows.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/testcase_targets.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/exceptions.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/yacc.prf:
@@ -604,8 +604,8 @@ P:/Qt/6.3.1/mingw_64/lib/Qt6Multimedia.prl:
 P:/Qt/6.3.1/mingw_64/lib/Qt6Widgets.prl:
 P:/Qt/6.3.1/mingw_64/lib/Qt6Gui.prl:
 P:/Qt/6.3.1/mingw_64/lib/Qt6Network.prl:
+P:/Qt/6.3.1/mingw_64/lib/Qt6Sql.prl:
 P:/Qt/6.3.1/mingw_64/lib/Qt6Core.prl:
-P:/Qt/6.3.1/mingw_64/lib/Qt6EntryPoint.prl:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../SpotifyUSFQ/SpotifyUSFQ.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug

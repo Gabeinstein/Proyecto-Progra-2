@@ -14,6 +14,7 @@
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,12 +29,15 @@ public:
     QPushButton *pause;
     QSlider *volume;
     QProgressBar *avance;
+    QPushButton *connect;
+    QPushButton *request;
+    QTextEdit *Texto;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(651, 216);
+        Widget->resize(651, 545);
         abrir = new QPushButton(Widget);
         abrir->setObjectName(QString::fromUtf8("abrir"));
         abrir->setGeometry(QRect(30, 30, 83, 29));
@@ -57,6 +61,15 @@ public:
         avance->setObjectName(QString::fromUtf8("avance"));
         avance->setGeometry(QRect(30, 90, 581, 23));
         avance->setValue(0);
+        connect = new QPushButton(Widget);
+        connect->setObjectName(QString::fromUtf8("connect"));
+        connect->setGeometry(QRect(30, 210, 83, 29));
+        request = new QPushButton(Widget);
+        request->setObjectName(QString::fromUtf8("request"));
+        request->setGeometry(QRect(160, 210, 83, 29));
+        Texto = new QTextEdit(Widget);
+        Texto->setObjectName(QString::fromUtf8("Texto"));
+        Texto->setGeometry(QRect(40, 270, 211, 221));
 
         retranslateUi(Widget);
 
@@ -71,6 +84,8 @@ public:
         stop->setText(QCoreApplication::translate("Widget", "Stop", nullptr));
         mute->setText(QCoreApplication::translate("Widget", "Mute", nullptr));
         pause->setText(QCoreApplication::translate("Widget", "Pause", nullptr));
+        connect->setText(QCoreApplication::translate("Widget", "Connect", nullptr));
+        request->setText(QCoreApplication::translate("Widget", "Request", nullptr));
     } // retranslateUi
 
 };

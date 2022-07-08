@@ -3,6 +3,7 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 #include <QFileDialog>
+#include "database.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -11,6 +12,7 @@ Widget::Widget(QWidget *parent)
     ui->setupUi(this);
     player = new QMediaPlayer(this);
     audioOutput = new QAudioOutput;
+    music_db = new Database;
 
     connect(player, &QMediaPlayer::positionChanged,[&](qint64 pos){
        ui->avance->setValue(pos);
@@ -19,6 +21,7 @@ Widget::Widget(QWidget *parent)
     connect(player, &QMediaPlayer::durationChanged, [&](qint64 dur){
        ui->avance->setMaximum(dur);
     });
+
 }
 
 Widget::~Widget()
@@ -74,5 +77,17 @@ void Widget::on_mute_clicked()
 void Widget::on_volume_valueChanged(int value)
 {
     audioOutput->setVolume(value);
+}
+
+
+void Widget::on_connect_clicked()
+{
+    ui->Texto->setText(music_db->connection());
+}
+
+
+void Widget::on_request_clicked()
+{
+    ui->Texto->setText(music_db->request(QString("SELECT id, Nombre, Album, Artista, Duracion FROM musica")));
 }
 
