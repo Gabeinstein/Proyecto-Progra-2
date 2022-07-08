@@ -10,14 +10,16 @@ QString Database::connection(){
     music_db.setHostName("localhost");
     music_db.setUserName("root");
     music_db.setPassword("14fe2002");
-    if (music_db.open() == false){
+    return "Set connection";
+}
+QString Database::request(QString _input){
+    /*if (music_db.open() == false){
         return "No se pudo conectar con la base de datos";
         music_db.lastError().text();
     }else{
         return "Coneccion satisfactoria!";
-    }
-}
-QString Database::request(QString _input){
+    }*/
+    music_db.open();
     input = _input;
     //input = "SELECT id, Nombre, Album, Artista, Duracion FROM musica";
     query.exec(input);
@@ -29,6 +31,7 @@ QString Database::request(QString _input){
         int tiempo = query.value(3).toInt();
         temp = Nombre;
     }
+    music_db.close();
 
     return temp;
 }
