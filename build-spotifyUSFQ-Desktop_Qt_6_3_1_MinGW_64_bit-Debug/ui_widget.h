@@ -56,7 +56,6 @@ public:
         volume = new QSlider(Widget);
         volume->setObjectName(QString::fromUtf8("volume"));
         volume->setGeometry(QRect(150, 150, 160, 18));
-        volume->setMaximum(100);
         volume->setOrientation(Qt::Horizontal);
         connect = new QPushButton(Widget);
         connect->setObjectName(QString::fromUtf8("connect"));
@@ -72,7 +71,7 @@ public:
         Disconnect->setGeometry(QRect(290, 210, 83, 29));
         avance = new QSlider(Widget);
         avance->setObjectName(QString::fromUtf8("avance"));
-        avance->setGeometry(QRect(30, 100, 581, 18));
+        avance->setGeometry(QRect(30, 90, 581, 18));
         avance->setOrientation(Qt::Horizontal);
 
         retranslateUi(Widget);

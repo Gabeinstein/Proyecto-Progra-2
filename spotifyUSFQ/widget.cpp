@@ -34,7 +34,7 @@ void Widget::on_abrir_clicked()
         return;
     }
     audio_control->getPlayer()->setSource(QUrl::fromLocalFile(filename));
-    audio_control->volume(ui->volume->value()/100);
+    audio_control->volume(ui->volume->value());
     on_play_clicked();
 }
 
@@ -73,9 +73,7 @@ void Widget::on_mute_clicked()
 
 void Widget::on_volume_valueChanged(int vol)
 {
-    //volumen -> [0,100]
-    //La funcion volume() acepta valores float -> [0.0, 1.0]
-    audio_control->volume(vol/100);
+    audio_control->volume(vol);
 }
 
 
@@ -95,6 +93,3 @@ void Widget::on_Disconnect_clicked()
 {
     music_db->close();
 }
-
-
-

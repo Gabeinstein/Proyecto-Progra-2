@@ -111,8 +111,6 @@ void Widget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 6: _t->on_connect_clicked(); break;
         case 7: _t->on_request_clicked(); break;
         case 8: _t->on_Disconnect_clicked(); break;
-        case 9: _t->on_avance_valueChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 10: _t->on_avance_sliderReleased(); break;
         default: ;
         }
     }

@@ -36,4 +36,3 @@ QMediaPlayer* AudioPlayer::getPlayer(){
 QAudioOutput* AudioPlayer::getAudioOutput(){
     return audio_output;
 }
-
