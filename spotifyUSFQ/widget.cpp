@@ -82,13 +82,18 @@ void Widget::on_volume_valueChanged(int value)
 
 void Widget::on_connect_clicked()
 {
-    ui->Texto->setText(music_db->connection());
+    music_db->connection();
 }
 
 
 void Widget::on_request_clicked()
 {
-    ui->Texto->setText(music_db->connection());
-    ui->Texto->setText(music_db->request(QString("SELECT id, Nombre, Album, Artista, Duracion FROM musica")));
+    music_db->request(QString("SELECT id, Nombre, Album, Artista, Duracion FROM musica"));
+}
+
+
+void Widget::on_Disconnect_clicked()
+{
+    music_db->close();
 }
 

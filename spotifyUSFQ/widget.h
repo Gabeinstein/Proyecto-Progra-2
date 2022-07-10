@@ -26,8 +26,8 @@ private slots:
     void on_mute_clicked();
     void on_volume_valueChanged(int value);
     void on_connect_clicked();
-
     void on_request_clicked();
+    void on_Disconnect_clicked();
 
 private:
     Ui::Widget *ui;

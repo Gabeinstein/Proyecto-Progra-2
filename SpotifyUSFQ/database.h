@@ -17,8 +17,9 @@ private:
     QString input;
 public:
     Database();
-    QString connection();
-    QString request(QString);
+    void connection();
+    void request(QString);
+    void close();
 };
 
 #endif // DATABASE_H

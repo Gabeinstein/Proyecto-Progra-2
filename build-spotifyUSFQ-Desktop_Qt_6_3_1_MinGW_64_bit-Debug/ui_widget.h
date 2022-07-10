@@ -32,6 +32,7 @@ public:
     QPushButton *connect;
     QPushButton *request;
     QTextEdit *Texto;
+    QPushButton *Disconnect;
 
     void setupUi(QWidget *Widget)
     {
@@ -70,6 +71,9 @@ public:
         Texto = new QTextEdit(Widget);
         Texto->setObjectName(QString::fromUtf8("Texto"));
         Texto->setGeometry(QRect(40, 270, 211, 221));
+        Disconnect = new QPushButton(Widget);
+        Disconnect->setObjectName(QString::fromUtf8("Disconnect"));
+        Disconnect->setGeometry(QRect(290, 210, 83, 29));
 
         retranslateUi(Widget);
 
@@ -86,6 +90,7 @@ public:
         pause->setText(QCoreApplication::translate("Widget", "Pause", nullptr));
         connect->setText(QCoreApplication::translate("Widget", "Connect", nullptr));
         request->setText(QCoreApplication::translate("Widget", "Request", nullptr));
+        Disconnect->setText(QCoreApplication::translate("Widget", "Disconnect", nullptr));
     } // retranslateUi
 
 };

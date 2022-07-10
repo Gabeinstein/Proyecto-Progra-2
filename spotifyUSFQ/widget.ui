@@ -140,6 +140,19 @@
     </rect>
    </property>
   </widget>
+  <widget class="QPushButton" name="Disconnect">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>210</y>
+     <width>83</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
