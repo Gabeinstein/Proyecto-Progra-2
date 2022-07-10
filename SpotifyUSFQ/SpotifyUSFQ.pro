@@ -9,11 +9,13 @@ CONFIG += c++17 console
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    audioplayer.cpp \
     database.cpp \
     main.cpp \
     widget.cpp
 
 HEADERS += \
+    audioplayer.h \
     database.h \
     widget.h
 
