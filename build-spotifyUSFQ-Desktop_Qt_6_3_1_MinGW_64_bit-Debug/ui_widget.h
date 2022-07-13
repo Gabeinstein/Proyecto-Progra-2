@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QTextEdit>
@@ -28,11 +27,11 @@ public:
     QPushButton *mute;
     QPushButton *pause;
     QSlider *volume;
-    QProgressBar *avance;
     QPushButton *connect;
     QPushButton *request;
     QTextEdit *Texto;
     QPushButton *Disconnect;
+    QSlider *avance;
 
     void setupUi(QWidget *Widget)
     {
@@ -58,10 +57,6 @@ public:
         volume->setObjectName(QString::fromUtf8("volume"));
         volume->setGeometry(QRect(150, 150, 160, 18));
         volume->setOrientation(Qt::Horizontal);
-        avance = new QProgressBar(Widget);
-        avance->setObjectName(QString::fromUtf8("avance"));
-        avance->setGeometry(QRect(30, 90, 581, 23));
-        avance->setValue(0);
         connect = new QPushButton(Widget);
         connect->setObjectName(QString::fromUtf8("connect"));
         connect->setGeometry(QRect(30, 210, 83, 29));
@@ -74,6 +69,10 @@ public:
         Disconnect = new QPushButton(Widget);
         Disconnect->setObjectName(QString::fromUtf8("Disconnect"));
         Disconnect->setGeometry(QRect(290, 210, 83, 29));
+        avance = new QSlider(Widget);
+        avance->setObjectName(QString::fromUtf8("avance"));
+        avance->setGeometry(QRect(30, 90, 581, 18));
+        avance->setOrientation(Qt::Horizontal);
 
         retranslateUi(Widget);
 

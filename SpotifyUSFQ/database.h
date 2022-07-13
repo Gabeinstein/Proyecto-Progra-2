@@ -4,23 +4,25 @@
 #include <QDebug>
 #include <QSqlDatabase>
 #include <QSqlQuery>
-#include <QPluginLoader>
-#include <QVariant>
+#include <QFileInfo>
+#include <QDir>
+#include <map>
 #include <iostream>
-using namespace std;
+#include "song.h"
 
-//que maaaas!
+using namespace std;
 
 class Database
 {
 private:
     QSqlDatabase music_db;
-    QSqlQuery query;
-    QString input;
+    map<int, Song> map_canciones;
+
 public:
     Database();
     void connection();
-    void request(QString);
+    void createMapDB();
+    void printMap();
     void close();
 };
 

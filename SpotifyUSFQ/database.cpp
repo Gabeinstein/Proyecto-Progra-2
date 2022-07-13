@@ -2,35 +2,51 @@
 
 Database::Database()
 {
-    input = "";
-
 }
-void Database::connection(){
-    music_db = QSqlDatabase::addDatabase("QMYSQL");
-    music_db.setHostName("localhost");
-    music_db.setDatabaseName("musicdb");
-    music_db.setUserName("root");
-    music_db.setPassword("14fe2002");
 
-    if(!music_db.open()){
-        qDebug() << "No se pudo conectar con la base de datos";
-        music_db.lastError().text();
-    }else{
+void Database::connection(){
+    //Usamos SQLITE como base de datos de la musica
+    music_db = QSqlDatabase::addDatabase("QSQLITE");
+    //Usamos el path predeterminado de QT para que sea compatible con la distribucion de la APP
+    music_db.setDatabaseName(QDir::currentPath() + "/Database/musicdb.db");
+    //throw and catch exception
+    try {
+        if (!music_db.open()) throw 1;
         qDebug() << "Coneccion satisfactoria!";
     }
-}
-void Database::request(QString _input){
-    input = _input;
-    query.exec(input);
-
-    while(query.next()){
-        int id = query.value(0).toInt();
-        QString Nombre = query.value(1).toString();
-        QString Album = query.value(2).toString();
-        int tiempo = query.value(3).toInt();
-        qDebug() << id << Nombre << Album << tiempo;
+    catch (int a) {
+        qDebug() << "Exception caught 1";
+        qDebug() << "No se pudo conectar con la base de datos";
     }
 }
+
+void Database::createMapDB(){
+    QSqlQuery query(QString("SELECT* FROM musica"));
+    while (query.next()) {
+         int id = query.value(0).toInt();
+         QString Nombre = query.value(1).toString();
+         QString Album = query.value(2).toString();
+         QString Artista = query.value(3).toString();
+         QString path = query.value(4).toString();
+         int AlbumNum = query.value(5).toInt();
+         Song temp;
+         temp.Name = Nombre;
+         temp.Album = Album;
+         temp.Artista = Artista;
+         temp.Path = path;
+         temp.id = id;
+         temp.num_album = AlbumNum;
+         map_canciones.insert(pair<int,Song>(id,temp));
+    }
+}
+
+void Database::printMap(){
+    for(auto iterMap:map_canciones){
+       // qDebug() << iterMap.first << iterMap.second;
+    }
+}
+
 void Database::close(){
     music_db.close();
+    qDebug() << "Coneccion cerrada!";
 }

@@ -2,13 +2,13 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include "audioplayer.h"
 
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
-class QMediaPlayer;
-class QAudioOutput;
+
 class Database;
 class Widget : public QWidget
 {
@@ -29,10 +29,13 @@ private slots:
     void on_request_clicked();
     void on_Disconnect_clicked();
 
+    void on_avance_valueChanged(int value);
+
+    void on_avance_sliderReleased();
+
 private:
     Ui::Widget *ui;
-    QMediaPlayer *player;
-    QAudioOutput *audioOutput;
+    AudioPlayer *audio_control;
     Database *music_db;
 };
 #endif // WIDGET_H
