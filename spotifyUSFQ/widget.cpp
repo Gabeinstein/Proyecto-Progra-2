@@ -85,7 +85,8 @@ void Widget::on_connect_clicked()
 
 void Widget::on_request_clicked()
 {
-    music_db->request(QString("SELECT id, Nombre, Album, Artista, Duracion FROM musica"));
+    music_db->createMapDB();
+    music_db->printMap();
 }
 
 

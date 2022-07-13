@@ -12,11 +12,15 @@ SOURCES += \
     audioplayer.cpp \
     database.cpp \
     main.cpp \
+    playlist.cpp \
+    song.cpp \
     widget.cpp
 
 HEADERS += \
     audioplayer.h \
     database.h \
+    playlist.h \
+    song.h \
     widget.h
 
 FORMS += \
