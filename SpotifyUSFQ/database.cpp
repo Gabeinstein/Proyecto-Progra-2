@@ -30,23 +30,26 @@ void Database::createMapDB(){
          QString path = query.value(4).toString();
          int AlbumNum = query.value(5).toInt();
          Song temp;
-         temp.Name = Nombre;
-         temp.Album = Album;
-         temp.Artista = Artista;
-         temp.Path = path;
-         temp.id = id;
-         temp.num_album = AlbumNum;
+         temp.setSong_Name(Nombre);
+         temp.setAuthor(Album);
+         temp.setAuthor(Artista);
+         temp.setPath(path);
+         temp.setID(id);
+         temp.setNum_At_Album(AlbumNum);
          map_canciones.insert(pair<int,Song>(id,temp));
     }
 }
 
 void Database::printMap(){
     for(auto iterMap:map_canciones){
-       // qDebug() << iterMap.first << iterMap.second;
+       qDebug() << iterMap.first << iterMap.second.getPath();
     }
 }
 
 void Database::close(){
     music_db.close();
     qDebug() << "Coneccion cerrada!";
+}
+map<int,Song> Database::getMap(){
+    return map_canciones;
 }

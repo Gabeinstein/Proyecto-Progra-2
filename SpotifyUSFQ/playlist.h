@@ -1,15 +1,17 @@
 #ifndef PLAYLIST_H
 #define PLAYLIST_H
-#include <vector>
-#include <iostream>
-using namespace std;
+#include "song.h"
+#include "database.h"
 
-class PlayList
+class PlayList: public Database
 {
-private:
-    //vector<Song>playlist_songs;
 public:
     PlayList();
+    Song next();
+    Song previous();
+
+private:
+    vector<Song> songs;
 };
 
 #endif // PLAYLIST_H

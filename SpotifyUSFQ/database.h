@@ -17,13 +17,13 @@ class Database
 private:
     QSqlDatabase music_db;
     map<int, Song> map_canciones;
-
 public:
     Database();
     void connection();
     void createMapDB();
     void printMap();
     void close();
+    map<int,Song> getMap();
 };
 
 #endif // DATABASE_H
