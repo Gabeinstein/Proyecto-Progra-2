@@ -9,6 +9,7 @@
 #include <map>
 #include <iostream>
 #include "song.h"
+#include "album.h"
 
 using namespace std;
 
@@ -16,14 +17,15 @@ class Database
 {
 private:
     QSqlDatabase music_db;
-    map<int, Song> map_canciones;
+    map<QString, Song> map_canciones;
 public:
     Database();
     void connection();
     void createMapDB();
+    Album requestArtist(QString);
     void printMap();
     void close();
-    map<int,Song> getMap();
+    map<QString,Song> getMap();
 };
 
 #endif // DATABASE_H

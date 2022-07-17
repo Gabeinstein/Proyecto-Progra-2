@@ -2,18 +2,16 @@
 #define ALBUM_H
 #include "song.h"
 
-class Album
-{
+class Album{
 public:
     Album();
-    Album(QString);
+    void insertSong(Song);
     void setAlbum_Name(QString);
     QString getAlbum_Name();
 
 private:
     vector<Song> A;
     QString album_name;
-
 };
 
 #endif // ALBUM_H

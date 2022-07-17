@@ -11,9 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,58 +23,71 @@ QT_BEGIN_NAMESPACE
 class Ui_Widget
 {
 public:
-    QPushButton *abrir;
-    QPushButton *play;
-    QPushButton *stop;
-    QPushButton *mute;
-    QPushButton *pause;
-    QSlider *volume;
-    QPushButton *connect;
-    QPushButton *request;
-    QTextEdit *Texto;
-    QPushButton *Disconnect;
     QSlider *avance;
+    QSlider *volume;
+    QTextEdit *SongData;
+    QPushButton *mute;
+    QPushButton *play;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *canciones;
+    QLabel *label;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(651, 545);
-        abrir = new QPushButton(Widget);
-        abrir->setObjectName(QString::fromUtf8("abrir"));
-        abrir->setGeometry(QRect(30, 30, 83, 29));
-        play = new QPushButton(Widget);
-        play->setObjectName(QString::fromUtf8("play"));
-        play->setGeometry(QRect(310, 30, 83, 29));
-        stop = new QPushButton(Widget);
-        stop->setObjectName(QString::fromUtf8("stop"));
-        stop->setGeometry(QRect(530, 30, 83, 29));
-        mute = new QPushButton(Widget);
-        mute->setObjectName(QString::fromUtf8("mute"));
-        mute->setGeometry(QRect(30, 150, 83, 29));
-        pause = new QPushButton(Widget);
-        pause->setObjectName(QString::fromUtf8("pause"));
-        pause->setGeometry(QRect(420, 30, 83, 29));
-        volume = new QSlider(Widget);
-        volume->setObjectName(QString::fromUtf8("volume"));
-        volume->setGeometry(QRect(150, 150, 160, 18));
-        volume->setOrientation(Qt::Horizontal);
-        connect = new QPushButton(Widget);
-        connect->setObjectName(QString::fromUtf8("connect"));
-        connect->setGeometry(QRect(30, 210, 83, 29));
-        request = new QPushButton(Widget);
-        request->setObjectName(QString::fromUtf8("request"));
-        request->setGeometry(QRect(160, 210, 83, 29));
-        Texto = new QTextEdit(Widget);
-        Texto->setObjectName(QString::fromUtf8("Texto"));
-        Texto->setGeometry(QRect(40, 270, 211, 221));
-        Disconnect = new QPushButton(Widget);
-        Disconnect->setObjectName(QString::fromUtf8("Disconnect"));
-        Disconnect->setGeometry(QRect(290, 210, 83, 29));
+        Widget->resize(1273, 628);
         avance = new QSlider(Widget);
         avance->setObjectName(QString::fromUtf8("avance"));
-        avance->setGeometry(QRect(30, 90, 581, 18));
+        avance->setGeometry(QRect(430, 580, 481, 20));
+        avance->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"background: none;\n"
+"border: none;\n"
+"background-repeat: none;\n"
+"\n"
+""));
         avance->setOrientation(Qt::Horizontal);
+        volume = new QSlider(Widget);
+        volume->setObjectName(QString::fromUtf8("volume"));
+        volume->setGeometry(QRect(1140, 580, 111, 20));
+        volume->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"background: none;\n"
+"border: none;\n"
+"background-repeat: none;\n"
+"\n"
+""));
+        volume->setOrientation(Qt::Horizontal);
+        SongData = new QTextEdit(Widget);
+        SongData->setObjectName(QString::fromUtf8("SongData"));
+        SongData->setGeometry(QRect(30, 550, 371, 51));
+        mute = new QPushButton(Widget);
+        mute->setObjectName(QString::fromUtf8("mute"));
+        mute->setGeometry(QRect(1062, 570, 41, 29));
+        play = new QPushButton(Widget);
+        play->setObjectName(QString::fromUtf8("play"));
+        play->setEnabled(true);
+        play->setGeometry(QRect(620, 530, 83, 29));
+        pushButton = new QPushButton(Widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(740, 530, 83, 29));
+        pushButton_2 = new QPushButton(Widget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(500, 530, 83, 29));
+        verticalLayoutWidget = new QWidget(Widget);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(270, 180, 781, 321));
+        canciones = new QVBoxLayout(verticalLayoutWidget);
+        canciones->setObjectName(QString::fromUtf8("canciones"));
+        canciones->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(Widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(20, 30, 591, 71));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Yu Gothic")});
+        font.setPointSize(48);
+        label->setFont(font);
 
         retranslateUi(Widget);
 
@@ -82,14 +97,11 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "SpotifyUSFQ", nullptr));
-        abrir->setText(QCoreApplication::translate("Widget", "Abrir", nullptr));
-        play->setText(QCoreApplication::translate("Widget", "Play", nullptr));
-        stop->setText(QCoreApplication::translate("Widget", "Stop", nullptr));
-        mute->setText(QCoreApplication::translate("Widget", "Mute", nullptr));
-        pause->setText(QCoreApplication::translate("Widget", "Pause", nullptr));
-        connect->setText(QCoreApplication::translate("Widget", "Connect", nullptr));
-        request->setText(QCoreApplication::translate("Widget", "Request", nullptr));
-        Disconnect->setText(QCoreApplication::translate("Widget", "Disconnect", nullptr));
+        mute->setText(QString());
+        play->setText(QString());
+        pushButton->setText(QCoreApplication::translate("Widget", "Next", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Widget", "Previeus", nullptr));
+        label->setText(QCoreApplication::translate("Widget", "SPOTIFY USFQ", nullptr));
     } // retranslateUi
 
 };

@@ -6,151 +6,148 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>651</width>
-    <height>545</height>
+    <width>1273</width>
+    <height>628</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>SpotifyUSFQ</string>
   </property>
-  <widget class="QPushButton" name="abrir">
+  <widget class="QSlider" name="avance">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>83</width>
-     <height>29</height>
+     <x>430</x>
+     <y>580</y>
+     <width>481</width>
+     <height>20</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Abrir</string>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+background: none;
+border: none;
+background-repeat: none;
+
+</string>
    </property>
-  </widget>
-  <widget class="QPushButton" name="play">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>30</y>
-     <width>83</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Play</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="stop">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>30</y>
-     <width>83</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Stop</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="mute">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>150</y>
-     <width>83</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Mute</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pause">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>30</y>
-     <width>83</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Pause</string>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
   <widget class="QSlider" name="volume">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>150</y>
-     <width>160</width>
-     <height>18</height>
+     <x>1140</x>
+     <y>580</y>
+     <width>111</width>
+     <height>20</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+background: none;
+border: none;
+background-repeat: none;
+
+</string>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="connect">
+  <widget class="QTextEdit" name="SongData">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>210</y>
+     <y>550</y>
+     <width>371</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mute">
+   <property name="geometry">
+    <rect>
+     <x>1062</x>
+     <y>570</y>
+     <width>41</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="play">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>530</y>
      <width>83</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>Connect</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="request">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>210</y>
+     <x>740</x>
+     <y>530</y>
      <width>83</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>Request</string>
+    <string>Next</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="Texto">
+  <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>270</y>
-     <width>211</width>
-     <height>221</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Disconnect">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>210</y>
+     <x>500</x>
+     <y>530</y>
      <width>83</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>Disconnect</string>
+    <string>Previeus</string>
    </property>
   </widget>
-  <widget class="QSlider" name="avance">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>90</y>
-     <width>581</width>
-     <height>18</height>
+     <x>270</x>
+     <y>180</y>
+     <width>781</width>
+     <height>321</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
+   <layout class="QVBoxLayout" name="canciones"/>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>591</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic</family>
+     <pointsize>48</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SPOTIFY USFQ</string>
    </property>
   </widget>
  </widget>

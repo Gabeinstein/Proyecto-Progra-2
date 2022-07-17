@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>P:/Users/gsoch/Downloads/spotifyUSFQ/spotifyUSFQ/Proyecto-Progra-2/SpotifyUSFQ/abrir.jpg</file>
+        <file>P:/Users/gsoch/Downloads/spotifyUSFQ/spotifyUSFQ/Proyecto-Progra-2/SpotifyUSFQ/buscar.png</file>
+        <file>P:/Users/gsoch/Downloads/spotifyUSFQ/spotifyUSFQ/Proyecto-Progra-2/SpotifyUSFQ/inicio.png</file>
+        <file>P:/Users/gsoch/Downloads/spotifyUSFQ/spotifyUSFQ/Proyecto-Progra-2/SpotifyUSFQ/mute.png</file>
+        <file>P:/Users/gsoch/Downloads/spotifyUSFQ/spotifyUSFQ/Proyecto-Progra-2/SpotifyUSFQ/pause.jpg</file>
+        <file>P:/Users/gsoch/Downloads/spotifyUSFQ/spotifyUSFQ/Proyecto-Progra-2/SpotifyUSFQ/play.jpg</file>
+    </qresource>
+</RCC>

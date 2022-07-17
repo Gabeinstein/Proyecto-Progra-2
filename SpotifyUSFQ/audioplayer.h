@@ -11,6 +11,7 @@ private:
     QMediaPlayer *player;
     QAudioOutput *audio_output;
 public:
+    bool playing = false;
     AudioPlayer();
     void progress();
     void duration();

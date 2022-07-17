@@ -1,15 +1,12 @@
 #include "album.h"
 
 Album::Album()
-    :album_name("Default")
-{
+    :album_name("Default"){
+}
+void Album::insertSong(Song add){
+        A.push_back(add);
 }
 
-Album::Album(QString a)
-    :album_name(a)
-{
-
-}
 
 void Album::setAlbum_Name(QString a){
     album_name=a;

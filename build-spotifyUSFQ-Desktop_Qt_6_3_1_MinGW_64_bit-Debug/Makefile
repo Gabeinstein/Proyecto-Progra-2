@@ -337,7 +337,8 @@ Makefile: ../SpotifyUSFQ/SpotifyUSFQ.pro P:/Qt/6.3.1/mingw_64/mkspecs/win32-g++/
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Network.prl \
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Sql.prl \
 		P:/Qt/6.3.1/mingw_64/lib/Qt6Core.prl \
-		P:/Qt/6.3.1/mingw_64/mkspecs/features/build_pass.prf
+		P:/Qt/6.3.1/mingw_64/mkspecs/features/build_pass.prf \
+		../SpotifyUSFQ/resources.qrc
 	$(QMAKE) -o Makefile ../SpotifyUSFQ/SpotifyUSFQ.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 P:/Qt/6.3.1/mingw_64/mkspecs/features/spec_pre.prf:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/device_config.prf:
@@ -607,6 +608,7 @@ P:/Qt/6.3.1/mingw_64/lib/Qt6Network.prl:
 P:/Qt/6.3.1/mingw_64/lib/Qt6Sql.prl:
 P:/Qt/6.3.1/mingw_64/lib/Qt6Core.prl:
 P:/Qt/6.3.1/mingw_64/mkspecs/features/build_pass.prf:
+../SpotifyUSFQ/resources.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../SpotifyUSFQ/SpotifyUSFQ.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 

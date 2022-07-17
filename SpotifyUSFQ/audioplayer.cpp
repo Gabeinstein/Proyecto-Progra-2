@@ -10,9 +10,10 @@ void AudioPlayer::progress(){
 
 
 }
+
 void AudioPlayer::duration(){
-    qint64 _duration;
-    _duration = player->duration();
+    /*qint64 _duration;
+    _duration = player->duration();*/
 
 }
 void AudioPlayer::setPosition(qint64 position){
@@ -20,9 +21,11 @@ void AudioPlayer::setPosition(qint64 position){
 }
 void AudioPlayer::play(){
     player->play();
+    playing = true;
 }
 void AudioPlayer::pause(){
     player->pause();
+    playing = false;
 }
 void AudioPlayer::stop(){
     player->stop();

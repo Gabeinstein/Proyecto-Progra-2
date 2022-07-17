@@ -2,6 +2,8 @@
 #define PLAYLIST_H
 #include "song.h"
 #include "database.h"
+#include "ui_widget.h"
+#include <vector>
 
 class PlayList: public Database
 {
@@ -9,9 +11,7 @@ public:
     PlayList();
     Song next();
     Song previous();
-
-private:
-    vector<Song> songs;
+    vector<QPushButton*> songs;
 };
 
 #endif // PLAYLIST_H

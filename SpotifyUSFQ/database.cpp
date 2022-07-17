@@ -36,7 +36,7 @@ void Database::createMapDB(){
          temp.setPath(path);
          temp.setID(id);
          temp.setNum_At_Album(AlbumNum);
-         map_canciones.insert(pair<int,Song>(id,temp));
+         map_canciones.insert(pair<QString,Song>(Nombre,temp));
     }
 }
 
@@ -50,6 +50,28 @@ void Database::close(){
     music_db.close();
     qDebug() << "Coneccion cerrada!";
 }
-map<int,Song> Database::getMap(){
+map<QString,Song> Database::getMap(){
     return map_canciones;
+}
+Album Database :: requestArtist(QString Artista_name){
+    QSqlQuery query(QString("SELECT* WHERE Artista = ") + Artista_name + QString(" FROM musica"));
+    Album temp_album;
+
+    while (query.next()) {
+         int id = query.value(0).toInt();
+         QString Nombre = query.value(1).toString();
+         QString Album = query.value(2).toString();
+         QString Artista = query.value(3).toString();
+         QString path = query.value(4).toString();
+         int AlbumNum = query.value(5).toInt();
+         Song temp;
+         temp.setSong_Name(Nombre);
+         temp.setAuthor(Album);
+         temp.setAuthor(Artista);
+         temp.setPath(path);
+         temp.setID(id);
+         temp.setNum_At_Album(AlbumNum);
+         temp_album.insertSong(temp);
+    }
+    return temp_album;
 }
